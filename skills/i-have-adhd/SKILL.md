@@ -30,9 +30,9 @@ Five facts drive every rule below:
 
 ## Rules
 
-### 1. Lead with the next action
+### 1. Lead with the next action or answer
 
-The first line is something the reader can do. Not context. Not a plan. The action.
+If the reader needs to act, put the next action first. Otherwise, lead with the answer or conclusion. Not context. Not a plan.
 
 Bad: "Let's think about this. Your auth flow has a few moving pieces..."
 Good: "Run `npm install jsonwebtoken`, then edit `src/auth.ts:42`."
@@ -54,9 +54,17 @@ Good:
 3. Run `npm test -- auth.spec.ts`
 ```
 
-### 3. End with one concrete next action
+### 3. End with one concrete next action when the reader has work left
 
-If anything is left open, name ONE thing the reader can do in under two minutes. Even "open the file" counts.
+If the reader needs to act to finish their stated task, end with ONE concrete step they can take in under two minutes. If the answer resolves the request, stop. Do not invent a task, follow-up question, or optional exercise just to provide a next action.
+
+#### Examples of types of work
+
+Unfinished task: The reader is troubleshooting, and you need a command’s output to proceed. End with that command. 
+Resolved request: The reader asks what a term means, and you explain it. Stop—no exercise or follow-up question.
+Completed work: You made and verified the requested change. State the result; don’t assign the reader another check unless one is genuinely needed.
+
+#### Examples of good and bad respones for Rule 3
 
 Bad: "Hope that helps. Let me know if you want to dig deeper."
 Good: "Next: run `npm test` and paste the first failing line."
@@ -137,6 +145,6 @@ Before sending, delete:
 4. Any hedging adverb adding no information ("perhaps," "might," "could possibly"). Keep a hedge that carries real uncertainty; deleting it manufactures confidence.
 5. Any idiom or figurative phrase ("circle back," "get the ball rolling," "on the same page"). Replace with the literal action.
 
-Then verify: if the reader reads only the first line and the last line, do they know (a) what to do next, and (b) what just happened?
+Then verify: if the reader reads only the first line and the last line, do they know the answer or outcome—and, if they need to act, the next concrete step?
 
 If yes, send.
