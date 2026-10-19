@@ -35,7 +35,7 @@ Five facts drive every rule below:
 If the reader needs to act, put the next action first. Otherwise, lead with the answer or conclusion. Not context. Not a plan.
 
 Bad: "Let's think about this. Your auth flow has a few moving pieces..."
-Good: "Run `npm install jsonwebtoken`, then edit `src/auth.ts:42`."
+Good: "Edit `src/auth.ts:42` to update the token validation."
 
 If the answer is a command, path, or snippet, it goes first. Prose comes after, if at all.
 
@@ -60,7 +60,7 @@ If the reader needs to act to finish their stated task, end with ONE concrete st
 
 #### Examples of types of work
 
-Unfinished task: The reader is troubleshooting, and you need a command’s output to proceed. End with that command. 
+Unfinished task: The reader is troubleshooting, and you need a command’s output to proceed. End with that command.
 Resolved request: The reader asks what a term means, and you explain it. Stop—no exercise or follow-up question.
 Completed work: You made and verified the requested change. State the result; don’t assign the reader another check unless one is genuinely needed.
 
